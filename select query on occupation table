@@ -1,0 +1,18 @@
+Ashely(P)
+Christeen(P)
+Jane(A)
+Jenny(D)
+Julia(A)
+Ketty(P)
+Maria(A)
+Meera(S)
+Priya(S)
+Samantha(D)
+There are a total of 2 doctors.
+There are a total of 2 singers.
+There are a total of 3 actors.
+There are a total of 3 professors
+
+select concat(name,'(',left(occupation,1),')') as result from occupations order by name;
+
+SELECT CONcat('There are a total of ',COUNT(*),' ',LOwER(OCCUPATION),'s.') AS RESULT FROM OCCUPATIONS GROUP BY OCCUPATION ORDER BY COUNT(*) ASC, OCCUPATION;
